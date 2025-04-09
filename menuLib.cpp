@@ -11,7 +11,7 @@ void Menu::printMenu() {
 	std::cout << "------ " << name << " ------";
 	std::cout << std::endl;
 	for (size_t i = 1; i <= numOfFuns; i++) {
-		std::cout << i << color[i] << ": " << textMap[i] << std::endl;
+		std::cout << i << ": " << textMap[i] << std::endl;
 	}
 	std::cout << std::endl << "0: Exit" << std::endl;
 	std::cout << std::endl << "Select Menu Item >> ";
