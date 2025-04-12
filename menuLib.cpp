@@ -7,6 +7,9 @@
 #include "map"
 #include "iostream"
 #include "menuLib.h"
+#include <functional>
+#include <unordered_map>
+
 void Menu::printMenu() {
 	std::cout << "------ " << name << " ------";
 	std::cout << std::endl;
@@ -51,8 +54,8 @@ void Menu::addMenuItem(std::string text, void(*fun)()) {
 	numOfFuns++;
 	funMap[numOfFuns] = fun;
 	textMap[numOfFuns] = text;
-	color[numOfFuns] = "\x1b[38;2;";
 }
+
 void Menu::setName(std::string _name){
 	name = _name;
 }
