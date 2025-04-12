@@ -11,8 +11,7 @@
 #include <unordered_map>
 
 void Menu::printMenu() {
-	std::cout << "------ " << name << " ------";
-	std::cout << std::endl;
+	std::cout << "                                                 " << name << std::endl;
 	for (size_t i = 1; i <= numOfFuns; i++) {
 		std::cout << i << ": " << textMap[i] << std::endl;
 	}
